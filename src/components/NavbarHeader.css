@@ -1,0 +1,26 @@
+.bg-black{
+    background-color: black;
+}
+
+.navbar{
+    font-size: 14px;
+    padding:0px 22px;
+    justify-content: space-between;
+}
+
+.navbar-brand{
+    font-size: 14px;
+}
+
+.navbar-nav {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-item{
+    display:inline-block;
+}
+
+
