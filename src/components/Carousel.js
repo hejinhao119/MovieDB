@@ -1,6 +1,8 @@
 import './Carousel.css';
 import React, { Component } from "react";
-import WebsiteLogo from '../Xmas.jpg'
+import MovieBanner1 from '../Movie-Banner1.jpg';
+import MovieBanner2 from '../Movie-Banner2.jpg';
+import MovieBanner3 from '../Movie-Banner3.jpg';
 
 class Carousel extends Component{
     constructor(props){
@@ -17,21 +19,21 @@ class Carousel extends Component{
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src={WebsiteLogo} class="d-block w-100" alt="..." />
+                        <img src={MovieBanner1} class="d-block w-100 h-100" alt="..." />
                         <div class="carousel-caption d-none d-md-block">
                             <h5>First slide label</h5>
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src={WebsiteLogo} class="d-block w-100" alt="..." />
+                        <img src={MovieBanner2} class="d-block w-100 h-100" alt="..." />
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Second slide label</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src={WebsiteLogo} class="d-block w-100" alt="..." />
+                        <img src={MovieBanner3} class="d-block w-100 h-100" alt="..." />
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Third slide label</h5>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>

@@ -3,24 +3,64 @@
 }
 
 .navbar{
+    width: 100%;
+    height: 48px;
     font-size: 14px;
-    padding:0px 22px;
+    padding:0px;
     justify-content: space-between;
+    position: fixed;
+    z-index: 9999;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar[aria-expanded="true"]{
+        height: 100%;
+    }
+
+    .fixed-container{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+    }
+
+    .navbar-toggler{
+        margin-left: 22px;
+    }
+
+    .navbar-collapse{
+        padding: 0px 22px 22px 22px;
+    }
 }
 
 .navbar-brand{
+    position:absolute;
+    top:0px;
+    left:45%;
     font-size: 14px;
+    margin-right: 0px;
+    padding: 0px;
 }
 
 .navbar-nav {
     width: 30%;
+    margin-bottom: 0px !important;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 .nav-item{
-    display:inline-block;
+    display: inline-block;
 }
 
+.nav-item-search{
+    float: right;
+}
 
+.nav-link{
+    float: left;
+}

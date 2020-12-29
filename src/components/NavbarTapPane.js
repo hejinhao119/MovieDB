@@ -8,9 +8,12 @@ import AccountCircleRoundedIcon from '@material-ui/icons/AccountCircleRounded';
 
 const useStyles = makeStyles(theme => ({
     root: {
-      width: 767,
+      position: 'fixed',
+      bottom: '0',
+      width: '100%',
+      minWidth: '300px',
       [theme.breakpoints.up('md')]: {
-        display:"None",
+        display: 'None',
       }
     },
   }));
@@ -23,7 +26,6 @@ function TapPane() {
       setValue(newValue);
     };
     
-  
     return (
         <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
             <BottomNavigationAction label="Home" value="home" icon={<HomeRoundedIcon />} />
